@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script src="js/jQuery.js"></script>
+        <script src="jqui/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <form action="" class="do">
+            <input type="text" class="numX">
+            <input type="text" class="numN">
+            <div class="calc"> vre to</div>
+        </form>
+    </body>
+
+    <script type="text/javascript">
+        
+
+        function calc(x, n){
+            console.log("x= "+x+"\nn= "+n);
+            arithm = 1;
+            paronom = 1;
+            s2=x;
+            pow=x;
+            for(i=2;i<=n;i++){
+                pow=pow*x*x;
+                console.log(pow);
+                arithm = 1;
+                paronom = 1;
+                for(j=1;j<=(i*2-2);j++){
+                    if(j%2!==0){
+                        arithm *= j;
+                    }
+                    else{
+                        paronom *= j;
+                    }
+                }
+                console.log('arithm= '+arithm);
+                console.log('paronom= '+paronom);
+                temp=(arithm/paronom)*pow;
+                if(i%2!==0){
+                    s2+=temp;
+                }
+                else{
+                    s2-=temp;
+                }
+            }
+            console.log("SUM is " +s2);
+        }
+
+        
+        $('.calc').on('click', function(){
+            numX = $('.numX').val();
+            numN = $('.numN').val();
+            calc(numX, numN);
+        });
+        
+    </script>
+</html>

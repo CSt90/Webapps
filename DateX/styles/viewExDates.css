@@ -1,0 +1,153 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+}
+
+form {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.links{
+    margin-top:20%;
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+}
+
+.topinfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    justify-content: flex-start;
+}
+
+#supplierSelect {
+    padding: 4px 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter{
+    height:30px;
+    width:30px;
+    display:flex;
+    margin-left:5px;
+}
+.filter:hover {
+    cursor:pointer;
+}
+
+.filter img {
+    height:100%;
+}
+
+.combi_check,
+.combi_label{
+    margin:auto 0px;
+}
+.combi_check{
+    margin-left:40px;
+}
+.combi_label {
+    margin-left: 5px;
+}
+
+#dates {
+    border-collapse: collapse;
+}
+
+#dates,
+#dates td,
+#dates th {
+    border: 1px solid black;
+}
+
+#dates td {
+    padding: 3px 2px;
+    text-align: center;
+}
+
+#dates input {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+#dates input:disabled{
+    color:black;
+}
+
+#dates .item {
+    width: 70%;
+}
+
+#dates tr:nth-child(odd) {
+    background-color: gainsboro
+}
+
+#dates tr:nth-child(even) {
+    background-color: white
+}
+
+.thead th {
+    padding: 5px 8px;
+}
+
+#dates>.thead>tr {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dates input:focus {
+    background-color: white;
+    font-weight: bold;
+}
+
+.edit:hover,
+.del:hover,
+.store:hover{
+    cursor:pointer;
+    color:#3b0899;
+    text-decoration:underline;
+}
+.edit:active,
+.del:active,
+.store:active{
+    color:black;
+    user-select: none;
+}
+
+.add {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.add:hover {
+    cursor: pointer;
+}
+
+.add img {
+    width: 50px;
+    height: 50px;
+}
+
+.datepicker{
+    font-weight:bold;
+    text-align:center;
+    margin-left:30px;
+}
+.docid{
+    margin-left:30px;
+    text-align:center;
+    font-family: Consolas;
+    font-size: 18px;
+    color: crimson;
+}

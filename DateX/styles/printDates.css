@@ -1,0 +1,55 @@
+.result_area {
+    width: 95%;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    margin: 70px auto 0;
+}
+
+#dates {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dates,
+#dates td,
+#dates th {
+    border: 1px solid black;
+}
+
+#dates td {
+    padding: 3px 2px;
+    text-align: center;
+    font-size:11px;
+	font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+		font-weight:bold;
+}
+#dates td:nth-child(4){
+	text-align:left;
+}
+
+#dates tr:nth-child(odd):not(.supplier_row) {
+    background-color: gainsboro
+}
+
+#dates tr:nth-child(even) {
+    background-color: white
+}
+
+#dates>.thead>tr>th {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dates>.thead>tr>th {
+    padding: 5px 8px;
+}
+
+.supplier_row {
+    height: 20px;
+    background-color: burlywood;
+    font-weight: bold;
+}
