@@ -1,0 +1,4 @@
+This project is my first step into web application/DB management. It was developed in a 7 month period, between two tourist seasons and finally shipped in May 2017.
+Since then, many functionalities were intended to be added, some are working, others not so much. Plus many changes have been done since then, including a visual overhaul.
+The idea was to transition many processes of the travel agency from analog to digital.
+As I mentioned above there are some things that do not work correctly, but I haven't fixed them yet, because there's no time.
