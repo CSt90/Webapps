@@ -1,0 +1,125 @@
+body{
+	font-family:Arial;
+    display:flex;
+    flex-direction: column;
+}
+
+#ititle{
+	text-align:center;
+    height:25px;
+    margin:0.5% auto 0.5%;
+    font-size: 18px;
+}
+
+#ititle #oname,
+#ititle #fdate,
+#ititle #tdate{
+    color:orangered;
+}
+
+#itable{
+    flex:1;
+    margin:0 auto 3%;
+	text-align:center;
+	background-color:rgba(255, 204, 153, 0.40);	
+    border:none;
+	border-radius:3px;
+	border-spacing:0px;
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+#itable #Cnames{
+	background-color:blueviolet;
+    height:35px;
+	color: white;
+}
+
+#itable tr:nth-child(even) {
+    background-color: #eee;
+}
+#itable tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#itable td{
+	padding: 3px 5px;
+	/*min-width: 100px;*/
+	white-space: nowrap;
+	position:relative;
+}
+
+td p{
+	height:18px;
+	max-height:72px;
+	overflow-y:hidden;
+}
+
+#totals{
+    display:flex;
+    flex-direction:row;
+    width:800px;
+    position:relative;
+    border-top:1px solid #666;
+    margin:0 auto 0.5%;
+}
+
+#totals-left,
+#totals-right{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+#totals-left{
+    margin-right: 5%;
+}
+#totals-right{
+    margin-left: 5%;
+}
+
+.totals-row{
+    display:flex;
+    margin:0% 5% 0% 0%; 
+    width:100%;
+    font-size: 18px;
+    color: #555;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbb;
+}
+
+.totals-row:nth-child(6){
+    border-bottom: 1px solid #999;
+    margin-left:0;
+    margin-right:0;
+    padding-right:10%;
+    padding-left:0%;
+}
+
+#endtotal{
+    border-bottom: none;
+    background-color:#ececec;
+    width:800px;
+/*    padding-left:53%;*/
+    color: #222;
+    margin:0 auto;
+}
+#endtotal .total-label{
+    padding-left:55%;
+}
+
+.total-label{
+    display:inline-block;
+    font-style:italic;
+    color: #555;
+}
+
+#end-total{
+    color: #222;
+}
+
+.total-num{
+    display:inline-block;
+    float:right;
+    width:20%;
+    text-align:right;
+}

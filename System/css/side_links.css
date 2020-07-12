@@ -1,0 +1,410 @@
+#links{
+	display:block;
+	height:99.9%;
+	width:11%;
+	z-index:1;
+	position:absolute;
+	top:1%;
+}
+
+.hamburger {
+  width: 45%;
+  height: 9%;
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter, width;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  border: 0;
+  margin: 2%;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 100%;
+    height: 4px;
+    background-color: #000bad;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform, width;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+
+/*
+ * Arrow Turn
+ */
+.hamburger--arrowturn.is-active .hamburger-inner {
+  transform: rotate(-180deg); }
+  .hamburger--arrowturn.is-active .hamburger-inner::before {
+    transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1); }
+  .hamburger--arrowturn.is-active .hamburger-inner::after {
+    transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1); }
+
+.select_table{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width:0;
+	background-color:rgba(0,0,0,1%);
+	height:80%;
+	list-style-type: none;
+    margin:0;
+	padding:4% 0 0 2%;
+	transition:width 0.5s;
+	/* overflow:hidden; */
+}
+
+.visible_right{
+	width:100%;
+}
+
+.select_table li{
+	float:left;
+	height:10%;
+	width:45%;
+	margin-bottom:2%;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	box-shadow:0px 3px 10px 0 #d9d9d9;
+	-moz-box-shadow:0px 3px 10px 0 #d9d9d9;
+	-webkit-box-shadow:0px 3px 10px 0 #d9d9d9;
+}
+
+.select_table li:nth-child(2){
+	background-image: url(../menuicon/bus_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(2):hover{
+	background-image: url(../menuicon/bus_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+}
+.select_table li:nth-child(3){
+	background-image: url(../menuicon/pickup_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(3):hover{
+	background-image: url(../menuicon/pickup_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(4){
+	background-image: url(../menuicon/hotel_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(4):hover{
+	background-image: url(../menuicon/hotel_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(5){
+	background-image: url(../menuicon/office_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(5):hover{
+	background-image: url(../menuicon/office_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(6){
+	background-image: url(../menuicon/excursion_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(6):hover{
+	background-image: url(../menuicon/excursion_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(7){
+	background-image: url(../menuicon/reservation_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(7):hover{
+	background-image: url(../menuicon/reservation_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(8){
+	background-image: url(../menuicon/driver_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(8):hover{
+	background-image: url(../menuicon/driver_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(9){
+	background-image: url(../menuicon/seller_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(9):hover{
+	background-image: url(../menuicon/seller_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(10){
+	background-image: url(../menuicon/guide_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(10):hover{
+	background-image: url(../menuicon/guide_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(11){
+	background-image: url(../menuicon/busassignment_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(11):hover{
+	background-image: url(../menuicon/busassignment_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(12){
+	background-image: url(../menuicon/pickuplist_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(12):hover{
+	background-image: url(../menuicon/pickuplist_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(13){
+	background-image: url(../menuicon/ptime_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(13):hover{
+	background-image: url(../menuicon/ptime_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+.select_table li:nth-child(14){
+	background-image: url(../menuicon/ptime_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+.select_table li:nth-child(14):hover{
+	background-image: url(../menuicon/ptime_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:0%;
+	margin-left:-0.2%;
+}
+
+.select_table li a{
+	display:block;
+	height:100%;
+	width:100%;
+	/* padding:18px 12px; */
+}
+
+#newResBtn, #administrationBtn{
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	box-shadow:0px 6px 10px 0 #d9d9d9;
+	-moz-box-shadow:0px 6px 10px 0 #d9d9d9;
+	-webkit-box-shadow:0px 6px 10px 0 #d9d9d9;
+}
+
+#newResBtn{
+	display:block;
+	float:left;
+	width:45%;
+	margin-bottom:3%;
+	/* margin-right:6.4%; */
+	background-image: url(../menuicon/ticket_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+#newResBtn:hover{
+	background-image: url(../menuicon/ticket_bfbfc2.png);
+	background-color:#000bad;
+	height:11%;
+	width:48%;
+	margin-right:7.3%;
+	margin-left:-0.2%;
+	cursor:pointer;
+}
+#administrationBtn{
+	display:inline-block;
+	position:relative;
+	height:9%;
+	margin-left:0%;
+	float:right;
+	width:7%;
+	background-image: url(../menuicon/gear_1b1991.png);
+	background-color:#e1e1e1;
+	-webkit-transition: width 0.2s, height 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.2s, height 0.2s;
+}
+#administrationBtn:hover{
+	/* background-image: url(menuicon/gear_bfbfc2.png);
+	background-color:#000bad;
+	height:110%;
+	width:4.8%; */
+	cursor:pointer;
+}
+
+/************************ Dropdown menu */
+#submenulist,
+.inactive{
+	position:relative;
+	display:block;
+	background-color:#000bad;
+	padding:0;
+	top:72%;
+	width:200%;
+	height:0;
+	-webkit-transition: height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.5s;
+	/* height:150%; */
+	right:100%;
+	border-radius:2px;
+	border-top:10px solid transparent;
+	background-clip: padding-box;
+}
+
+#submenulist li{
+	list-style:none;
+	display:block;
+	height:0%;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition: visibility 0.4s, opacity 0.4s, height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: visibility 0.4s, opacity:0.4s, height 0.5s;
+	padding:0% 5%;
+}
+
+#submenulist li span{
+	text-decoration:none;
+	display:block;
+	font-size:90%;
+	color:#e1e1e1;
+	width:100%;
+	height:100%;
+}
+
+#submenulist li:hover{
+	background-color:#e1e1e1;
+}
+
+#submenulist li:hover > span{
+	color:#000bad;
+}
+
+#submenulist li:active{
+	background-color:#000;
+	color:white;
+}
+
+#submenulist li:active > span{
+	color:white;
+}
+
+
+#administrationBtn:hover > #submenulist li{
+	opacity:1;
+	height:25%;
+	vertical-align:middle;
+	line-height:180%;
+	visibility:visible;
+}
+
+#administrationBtn:hover > #submenulist,
+.active {
+	height:200%;
+}

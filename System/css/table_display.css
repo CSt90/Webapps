@@ -1,0 +1,482 @@
+body{
+	font-family:Arial;
+    display:flex;
+}
+
+#errorbox{
+	display:block;
+	position:relative;
+	top:50px;
+	margin:0px auto; /*this, along with relative positioning centers the block in the page*/
+	height:40px;
+	width:45%;
+	border:1px solid red;
+	border-radius:3px;
+	background-color:rgba(240, 3, 12, 0.2);
+}
+
+#errorx{
+	display:block;
+	position:relative;
+	top:4px;
+	left:4px;
+	margin:0px;
+	padding:0px;
+	vertical-align:middle;
+}
+
+#errormsg{ /*customizable error message depending on the error*/
+	display:block;
+	position:absolute; /*absolute positioning makes it understand that it's inside another block. if relative, I have to give with in px*/
+	width:90%;
+	height:34px;
+	top:3px;
+	left:50px;
+	vertical-align:middle;
+	line-height:34px;
+	text-align:left;
+	color:red;
+	text-shadow:0px 0px 3px #FFFFFF;
+	font-style:italic;
+	font-size:13px;
+}
+
+#editsuccessbox{
+	display:block;
+	position:relative;
+	top:50px;
+	margin:0px auto; /*this, along with relative positioning centers the block in the page*/
+	padding:0;
+	height:40px;
+	width:45%;
+	border:1px solid blue;
+	border-radius:3px;
+	background-color:rgba(28, 159, 240, 0.3);
+}
+
+#editsuccessV{
+	display:block;
+	position:relative;
+	top:4px;
+	left:4px;
+	margin:0px;
+	padding:0px;
+	vertical-align:middle;
+}
+
+#editsuccessmsg{ /*customizable error message depending on the error*/
+	display:block;
+	position:absolute; /*absolute positioning makes it understand that it's inside another block. if relative, I have to give with in px*/
+	width:90%;
+	height:34px;
+	top:3px;
+	left:50px;
+	vertical-align:middle;
+	line-height:34px;
+	text-align:left;
+	color:blue;
+	text-shadow:0px 0px 3px #FFFFFF;
+	font-style:italic;
+	font-size:13px;
+}
+
+#errormsg br{
+	display:none;
+	font-size:14px;
+}
+
+#page-title{
+	display:block;
+	width:20%;
+	left:38%;
+	top:0;
+	position:absolute;
+	font-family:Arial; 
+	font-style:italic; 
+	font-weight:500;
+	text-align:center;
+	border-bottom:1px solid rgb(100,100,100);
+}
+
+/*
+body table{
+	display:block;
+	position:absolute;
+	float:left;
+	left:17%;
+	top:20%;
+	 border:1px solid black; 
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	background-color:rgba(255, 204, 153, 0.40);	
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+*/
+
+/*body #tablebig{
+	display:block;
+	position:absolute;
+	top:17%;
+	left:2%;
+	/*width:100%;*/
+	/*height:90%;*/
+	/* border:1px solid #e9e9e9; */
+	/*border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	background-color:rgba(255, 204, 153, 0.40);	
+	margin-bottom: 10%;
+	margin-right:15%;
+}*/
+
+/*********************** styles for eachtable specifically ***********/
+
+body #htable{
+	display:block;
+	position:absolute;
+	top:17%;
+	left:3%;
+	/*width:100%;*/
+	/*height:90%;*/
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	background-color:rgba(255, 204, 153, 0.40);	
+	margin-bottom: 10%;
+	margin-right:15%;
+}
+
+#htable #Cnames{
+	background-color:seagreen; /*rgba(254,60,4,0.6); */
+}
+
+body #rtable{
+	display:block;
+	position:absolute;
+	top:17%;
+	left:2.5%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	background-color:rgba(255, 204, 153, 0.40);	
+	margin-bottom: 10%;
+	margin-right:15%;
+}
+
+#rtable #Cnames{
+	background-color:mediumvioletred; /*rgba(254,60,4,0.6); */
+}
+
+#rtable tr .edits{
+	display:inline-block;
+	width:2.5%;
+	height:16px;
+	position:absolute;
+	vertical-align: baseline;
+	margin-left:2.5%;
+    margin-top:-35px;
+	font-size:12px;
+	padding:2px 2px;
+	color:rgb(20,20,20);
+	cursor:pointer;
+	background-color:lightblue;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;	
+}
+
+body #stable{
+    display:block;
+	position:absolute;
+	float:left;
+	left:37%;
+	top:20%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+
+#stable #Cnames{
+	background-color:orangered; /*rgba(254,60,4,0.6); */
+}
+
+body #ptable{
+    display:block;
+	position:absolute;
+	float:left;
+	left:32%;
+	top:20%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+
+#ptable #Cnames{
+	background-color:goldenrod; /*rgba(254,60,4,0.6); */
+}
+
+body #otable{
+    display:block;
+	position:absolute;
+	float:left;
+	left:3%;
+	top:20%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+
+#otable #Cnames{
+	background-color:coral; /*rgba(254,60,4,0.6); */
+}
+
+body #dtable{
+    display:block;
+	position:absolute;
+	float:left;
+	left:40%;
+	top:20%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+
+#dtable #Cnames{
+	background-color:darkred; /*rgba(254,60,4,0.6); */
+}
+
+body #etable{
+    display:block;
+	position:absolute;
+	float:left;
+	left:13%;
+	top:20%;
+	border:none;
+	border-radius:3px;
+	border-spacing:0px;
+	text-align:center;
+	margin-bottom: 15%;
+	border-collapse: collapse;
+}
+
+#etable #Cnames{
+	background-color:darkmagenta; /*rgba(254,60,4,0.6); */
+}
+
+/*********************** styles for each table specifically ***********/
+
+table #Cnames{	
+	background-color:seagreen; /*rgba(254,60,4,0.6); */
+	height:35px;
+	color: white;
+	border: none;
+	border-collapse: collapse;
+}
+
+table .empty_theader{
+	visibility:hidden;
+}
+
+table .deleteRow{
+	visibility:hidden;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table td{
+	padding: 3px 5px;
+	/*min-width: 100px;*/
+	white-space: nowrap;
+}
+
+td p{
+	height:18px;
+	max-height:72px;
+}
+
+table #edit{
+	background-color:rgba(28, 159, 240, 0.3);
+}
+
+.lab{
+	text-align:center;
+	display:inline-block;
+}
+
+table .long{
+	width:300px;
+}
+tr{
+	height:24px;
+	max-height:72px;
+}
+
+#delRow{
+	display:none;
+	width:30px;
+	left:-33px;
+    margin-top:-3px; /* perfectly aligned now */
+	height:22px;
+	max-height:72px;
+	border: 1px solid red;
+	position:absolute;
+	background-color:rgba(240, 0, 12, 0.3);
+	border-radius:1px;
+	color:red;
+	text-shadow:0px 0px 3px #FFFFFF;
+	vertical-align: baseline;
+	text-align:center;
+}
+
+tr:hover #delRow{
+	display:block;
+}
+
+#delRow:hover{
+	cursor:pointer;	
+}
+
+#editTooltip{
+	display:none;
+	position:relative;
+	width: 20%;
+	top: 22%;
+	font-style:italic;
+	color:blue;
+}
+
+#new{
+	height:24px;
+	width: 80px;
+	background-color: rgba(9, 240, 38, 0.4); /*rgba(28, 159, 240, 0.3);*/
+}
+
+#new #txtcell{
+	width: 80px;
+	background-color:inherit;
+	border:none;
+}
+
+#new #dropdown{
+	width: 90px;
+	background-color:inherit;
+	border:none;
+}
+
+#add{
+	background-color: rgb(28, 159, 240);
+}
+
+#submit{
+	background-color: rgba(9, 240, 38, 0.4);
+	display:block;
+	height:24px;
+	text-align:center;
+	position:absolute;
+	width:30px;
+	right:-31px;
+	margin-top:-20px;
+	border:1px solid green;
+	color:green;
+	border-radius:1px;
+	text-shadow:0px 0px 3px #FFFFFF;
+}
+
+#submitbig{
+	background-color: rgba(9, 240, 38, 0.4);
+	display:block;
+	height:42px;
+	text-align:center;
+	position:absolute;
+	width:40px;
+	right:-41px;
+	margin-top:-29px;
+	border:1px solid green;
+	color:green;
+	border-radius:2px;
+	text-shadow:0px 0px 3px #FFFFFF;
+}
+
+#newrow{
+    background-color: rgba(9, 240, 38, 0.4);
+    color:green;
+    text-shadow:0px 0px 3px #FFFFFF;
+    cursor:pointer;
+}
+#newHotel{
+    height:18px;
+}
+
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #18ab29;
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	position:relative;
+	margin-top:5%;
+	width:102px;
+	left:50%;
+	margin-left:-51px;
+	top:99%;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	bottom:99.1%;
+}
+
+
+/**************** viewReservationsTable.php ********************/
+#filterRes{
+    position:absolute;
+    top:2%;
+    right:3%;
+    background-image: url('../icon/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 15%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 2px solid #ddd; /* Add a grey border */
+    border-radius: 5px;
+    margin-bottom: 12px; /* Add some space below the input */
+    height:8%;
+}
+/**************** viewReservationsTable.php ********************/
