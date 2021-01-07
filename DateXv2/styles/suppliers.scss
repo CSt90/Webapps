@@ -1,0 +1,112 @@
+$base-color: #350096;
+$bg-color:#e6e6e6;
+$base-lighter: rgba($base-color, 0.07);
+
+body {
+    margin:0;
+    padding:0;
+    margin-left:12%;
+    // overflow-x:hidden;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background-color:$bg-color;
+    height:100vh;
+
+    .pageΗeader{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width:50%;
+
+        .tableTitle{
+            padding:10px 32px;
+            border-radius: 25px;
+            background-color: $base-color;
+            color:#e6e6e6;
+            user-select:none;
+        }
+
+        .addSupplierBtn{
+            padding:10px 32px;
+            border-radius: 25px;
+            background-color: #3BBEAA;
+            color:#e6e6e6;
+            user-select:none;
+        }
+    }
+
+    .tableWrapper{
+        display:flex;
+        height:76%;
+        overflow-y:auto;
+        margin:0 auto;
+        margin-top:30px;
+        width:88%;
+        min-width:1070px;
+
+        #suppliers{
+            width: 100%;
+            font-size:15px;
+            border-collapse:collapse;
+    
+            th{
+                background-color: $base-lighter;
+                padding:12px 3px;
+                white-space: nowrap;
+                user-select:none;
+            }
+
+            tr{
+                border-bottom:2px solid #ccc;
+                text-align:left;
+                td{
+                    padding:12px 6px;
+                    white-space:normal;
+
+                    .edit, .del, .store{
+                        height:25px;
+                        width:25px;
+                        margin:0 auto;
+                        padding:0;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;    
+                        background-color: $bg-color;
+    
+                        &:hover{
+                            cursor:pointer;
+                        }
+                        &:active{
+                            user-select: none;
+                        }
+                    }
+    
+                    .edit{
+                        background-image: url(../img/edit_icon.png);
+                    }
+                    .del{
+                        background-image: url(../img/cancel_icon.png);
+                    }
+                    .store{
+                        background-image: url(../img/done_icon.png);
+                    }
+
+                    input {
+                        border: none;
+                        background-color: transparent;
+                        width:100%;
+        
+                        &:disabled{
+                            color:black;
+                        }
+                        &:focus {
+                            background-color: white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}

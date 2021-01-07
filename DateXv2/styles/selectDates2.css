@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+}
+
+form {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.topinputs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    justify-content: flex-start;
+}
+
+.datepicker {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.filter {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.filter:hover {
+    cursor: pointer;
+}
+
+.filter img {
+    height: 100%;
+    width:100%;
+}
+
+.result_area{
+    width:75%;
+    max-height:650px;
+    background-color:#ddd;
+    border:1px solid #ccc;
+    margin:70px auto 0;
+    transform: translateX(70px);
+    overflow-y:scroll;
+}
+
+#dates {
+    border-collapse: collapse;
+    width:100%;
+}
+
+#dates,
+#dates td,
+#dates th {
+    border: 1px solid black;
+}
+
+#dates td {
+    padding: 3px 2px;
+    text-align: center;
+	font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+		font-weight:bold;
+}
+#dates td:nth-child(4){
+	text-align:left;
+}
+
+
+#dates>.thead>tr>th {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#dates>.thead>tr>th{
+    padding: 5px 8px;
+}
+
+
+.print {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.print:hover {
+    cursor: pointer;
+}
+
+.print img {
+    width: 50px;
+    height: 50px;
+}
+
+.no_expirations {
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #78ff41
+}

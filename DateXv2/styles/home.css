@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e6e6e6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+body form .topinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 95px;
+  min-height: 60px;
+  width: 90%;
+  min-width: 1070px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+body form .topinfo h2 {
+  margin-left: 3%;
+  padding: 10px 32px;
+  border-radius: 25px;
+  background-color: #350096;
+  color: #e6e6e6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body form .topinfo .docInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto 0;
+  max-height: 32px;
+  margin-right: 22%;
+}
+
+body form .topinfo .docInfoContainer #supplierSelect, body form .topinfo .docInfoContainer .docid, body form .topinfo .docInfoContainer .datepicker {
+  display: block;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #bbb;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #e6e6e6;
+  margin-right: 20%;
+}
+
+body form .topinfo .docInfoContainer #supplierSelect:focus, body form .topinfo .docInfoContainer .docid:focus, body form .topinfo .docInfoContainer .datepicker:focus {
+  outline: none;
+  border-bottom: 2px solid #333;
+}
+
+body form .topinfo .docInfoContainer #supplierSelect {
+  min-width: 262px;
+}
+
+body form .topinfo .docInfoContainer .docid, body form .topinfo .docInfoContainer .datepicker {
+  min-width: 195px;
+}
+
+body form .topinfo .docInfoContainer .docid {
+  color: crimson;
+  text-align: center;
+}
+
+body form #dates {
+  border: none;
+  border-collapse: collapse;
+  width: 88%;
+  min-width: 1070px;
+}
+
+body form #dates .thead th {
+  background-color: rgba(53, 0, 150, 0.07);
+  padding: 12px 3px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body form #dates .thead th button {
+  border: none;
+  background: url("../img/addRow3_icon.png");
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+body form #dates .thead th button:hover {
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+body form #dates .thead th:not(:nth-child(1)) > button {
+  margin-left: 30px;
+}
+
+body form #dates tr {
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+
+body form #dates tr td {
+  padding: 12px 6px;
+  white-space: normal;
+}
+
+body form #dates tr td input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+body form #dates tr td input:focus {
+  background-color: #e6e6e6;
+  font-weight: bold;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+body form #dates tr td .item {
+  width: 70%;
+}
+
+body form .submit {
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.05s ease-in;
+  transition: 0.05s ease-in;
+}
+
+body form .submit:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 7px 41px -1px rgba(53, 0, 150, 0.58);
+          box-shadow: 5px 7px 41px -1px rgba(53, 0, 150, 0.58);
+}
+
+body form .submit img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=home.css.map */

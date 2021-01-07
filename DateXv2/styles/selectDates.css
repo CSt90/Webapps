@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-left: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e6e6e6;
+}
+
+body .print {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+body .print:hover {
+  cursor: pointer;
+}
+
+body .print img {
+  width: 50px;
+  height: 50px;
+}
+
+body .pageTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 32px;
+  border-radius: 25px;
+  background-color: #350096;
+  color: #e6e6e6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 50%;
+}
+
+body .pageTitle .titleImg {
+  background-image: url("../img/cal_icon.png");
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+body form .topinputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body form .datepicker {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 30px;
+}
+
+body form .filter {
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+}
+
+body form .filter:hover {
+  cursor: pointer;
+}
+
+body form .filter img {
+  height: 100%;
+  width: 100%;
+}
+
+body .result_area {
+  width: 75%;
+  max-height: 650px;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  margin: 70px auto 0;
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+  overflow-y: auto;
+}
+
+body .result_area #dates {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 100%;
+}
+
+body .result_area #dates th {
+  border: 1px solid black;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 8px;
+}
+
+body .result_area #dates .no_expirations {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #78ff41;
+}
+
+body .result_area #dates td {
+  border: 1px solid black;
+  padding: 3px 2px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body .result_area #dates td:nth-child(4) {
+  text-align: left;
+}
+/*# sourceMappingURL=selectDates.css.map */
