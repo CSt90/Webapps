@@ -1,2 +1,0 @@
-#38ad40 normal
-#40c747 hover
